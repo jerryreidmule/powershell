@@ -4,7 +4,7 @@
 
 Add-PSSnapin VMware.VimAutomation.Core 
 
-Connect-ViServer obt-vcenter.ic.intel.com -Username Administrator@vsphere.local -Password $PASSWORD
+Connect-ViServer $VCENTERHOST -Username Administrator@vsphere.local -Password $PASSWORD
 
 
  foreach ($i in 10..29) 
