@@ -5,7 +5,7 @@
 
 $localIpAddress=((ipconfig | findstr [0-9].\.)[0]).Split()[-1]
 
-$localHostname= (Resolve-DnsName $localIpAddress -Server $dnserver).namehost.split('.')[0]
+$localHostname= (Resolve-DnsName $localIpAddress -Server $dnsserver).namehost.split('.')[0]
 
 Rename-Computer -NewName $localHostname -DomainCredential OBT\Administrator -Restart
 
