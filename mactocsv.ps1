@@ -6,10 +6,10 @@
 
 Add-PSSnapin VMware.VimAutomation.Core 
 
-#Removes the Old index.html so we start with a clear file
+#removes old csv
 Remove-Item $env:USERPROFILE\Desktop\MAC.csv
 
-#creates the new index.html file
+#creates the new csv
 New-Item $env:USERPROFILE\Desktop\mac.csv -type file
  
 
